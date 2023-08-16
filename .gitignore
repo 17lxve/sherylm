@@ -27,6 +27,6 @@ coverage
 *.sln
 *.sw?
 .vscode
+.prettierc.json
+.eslintrc.cjs
 README.md
-assets
-assets/*
