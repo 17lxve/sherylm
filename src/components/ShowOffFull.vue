@@ -4,22 +4,22 @@ export default {
   components: {
     LightShow
   },
-  props:{
-    a:{
-      type:String,
-      required:true
+  props: {
+    a: {
+      type: String,
+      required: true
     },
-    b:{
-      type:String,
-      required:true
+    b: {
+      type: String,
+      required: true
     },
-    c:{
-      type:String,
-      required:true
+    c: {
+      type: String,
+      required: true
     },
-    d:{
-      type:String,
-      required:true
+    d: {
+      type: String,
+      required: true
     }
   }
 }
@@ -45,7 +45,7 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap:1%;
+  gap: 1%;
 }
 button {
   margin: 2% 0;

@@ -4,22 +4,22 @@ export default {
   components: {
     LightShow
   },
-  props:{
-    a:{
-      type:String,
-      required:true
+  props: {
+    a: {
+      type: String,
+      required: true
     },
-    b:{
-      type:String,
-      required:true
+    b: {
+      type: String,
+      required: true
     },
-    c:{
-      type:String,
-      required:true
+    c: {
+      type: String,
+      required: true
     },
-    d:{
-      type:String,
-      required:true
+    d: {
+      type: String,
+      required: true
     }
   }
 }
@@ -32,7 +32,7 @@ export default {
       <LightShow :link="'/glasses/' + c" :name="'Presley'" />
       <LightShow :link="'/glasses/' + d" :name="'Kadher'" />
     </div>
-    <button>Voir nos collections</button>
+    <button @click="$router.push('/product')">Voir nos collections</button>
   </div>
 </template>
 

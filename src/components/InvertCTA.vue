@@ -33,7 +33,7 @@ export default {
   <div class="box">
     <div class="first-half" :style="background_image_style">
       <h2 class="temp">{{ call }}</h2>
-      <button>{{ clicker }}</button>
+      <button @click="$router.push('/product')">{{ clicker }}</button>
     </div>
     <div class="second-half">
       <h2>{{ title }}</h2>
@@ -47,12 +47,12 @@ export default {
 
 <style scoped>
 .second-half {
-  width: 50%;
+  width: 40%;
   color: black;
   font-family: Inika;
 }
 .first-half {
-  width: 50%;
+  width: 30%;
   color: orange;
   text-align: left;
   background-repeat: no-repeat;
@@ -97,14 +97,13 @@ h2 {
 }
 .temp {
   width: 30%;
-  /* filter: brightness(150%); */
   margin: 5% 0 5% 0;
-  /* background-color: whitesmoke; */
 }
 .box {
   display: flex;
   flex-direction: row;
   margin-bottom: 2%;
-  gap: 1%;
+  gap: 10%;
+  justify-content: center;
 }
 </style>

@@ -18,11 +18,11 @@ export default {
 
 <style>
 .fade-enter-active,
-.fade-leave-active{
+.fade-leave-active {
   transition: opacity 1s;
 }
 .fade-enter-from,
-.fade-leave-to{
+.fade-leave-to {
   opacity: 0;
 }
 </style>

@@ -30,12 +30,7 @@ export default {
       profiter pleinement du monde qui vous entoure.
     </CallToAction>
 
-    <ShowOff
-    :a="'1.webp'"
-    :b="'2.webp'"
-    :c="'3.webp'"
-    :d="'4.webp'"
-    />
+    <ShowOff :a="'1.webp'" :b="'2.webp'" :c="'3.webp'" :d="'4.webp'" />
 
     <InvertCTA
       :title="'Une paire qui vous embellit'"

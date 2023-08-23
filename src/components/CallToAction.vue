@@ -41,19 +41,19 @@ export default {
 
     <div class="second-half" :style="background_image_style">
       <h1>{{ call }}</h1>
-      <button>{{ clicker }}</button>
+      <button @click="$router.push('/contact')">{{ clicker }}</button>
     </div>
   </div>
 </template>
 
 <style scoped>
 .first-half {
-  width: 50%;
+  width: 40%;
   color: black;
   font-family: Inika;
 }
 .second-half {
-  width: 50%;
+  width: 30%;
   color: brown;
   text-align: center;
   background-repeat: no-repeat;
@@ -99,6 +99,8 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-bottom: 2%;
-  gap: 1%;
+  justify-content: center;
+  gap: 10%;
+  /* align-items: center; */
 }
 </style>

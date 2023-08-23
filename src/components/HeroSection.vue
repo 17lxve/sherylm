@@ -29,7 +29,8 @@ export default {
       <h1>{{ slogan }}</h1>
     </div>
     <div class="btdiv">
-      <button>Découvrir nos produits</button>
+      <!-- <button @click="$router.back()">Découvrir nos produits</button> -->
+      <button @click="$router.push('/product')">Découvrir nos produits</button>
     </div>
   </div>
 </template>
@@ -58,7 +59,6 @@ export default {
   background-size: cover;
   background-position: center;
   width: 100%;
-  /* filter: brightness(90%); */
   aspect-ratio: 10/3;
   margin-bottom: 1%;
 }
