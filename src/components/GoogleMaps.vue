@@ -1,3 +1,26 @@
+<script>
+// import YanGo from './YanGo.vue'
+export default{
+  methods:{
+    open_maps(){
+      window.open('https://goo.gl/maps/Uz728hE5ZUeHopmG6', "_blank")
+    },
+    open_yango(){
+      window.open('https://3.redirect.appmetrica.yandex.com/route?' +
+'start-lat=5.402296881669657' +
+'&start-lon=-3.976345316777942' +
+'&end-lat=5.348922371094867' +
+'&end-lon=-3.9971046030935775' +
+'&level=<business>' +
+'&ref=yoursiteru' +
+'&appmetrica_tracking_id=1178268795219780156' +
+'&lang=fr")')
+    }
+  }, components: {
+    // YanGo
+  }
+}
+</script>
 <template>
   <div class="root">
     <iframe
@@ -16,8 +39,9 @@
         Nous avons hâte de vous acceuillir dans notre espace privilégié, où la qualité des soins et
         l'expérience client sont notre priorité absolue.
       </p>
-      <button>Google Maps</button>
-      <button>Yango</button>
+      <button @click="open_maps()">Google Maps</button>
+      <button @click="open_yango()">Yango</button>
+      <!-- <YanGo></YanGo> -->
       <hr style="margin: 5% 0 5% 5%" />
       <div style="width: 40%; float: right; font-family: Arial; font-size: large; font-weight: bold;">
         <ul>
@@ -49,9 +73,44 @@ li{
   list-style-type: none;
 }
 button{
-  margin: 2%;
+  width: 25%;
+  margin: 4%;
   background-color: transparent;
-  border: grey double solid 0.15px;
-  border-radius: 5px;
+  outline: outset;
+  border:none;
+  padding: 1% 3%;
+  animation: shine 3s ease-in-out infinite;
+  font-size:large;
+}
+@keyframes shine{
+  0%,
+  100%{
+    outline-color: red;
+    font-family: Outfit;
+    border-radius: 2rem;
+    outline-width: 10px;
+  }
+  14%{
+    outline-color: orange;
+  }
+  28.5%{
+    outline-color: yellow;
+    outline-width: 5px;
+  }
+  42.85%{
+    outline-color: green;
+    font-family: Inika;
+  }
+  57.14%{
+    outline-color: blue;
+    outline-width: 10px;
+  }
+  71.42%{
+    outline-color: indigo;
+  }
+  85.7%{
+    outline-color: purple;
+    outline-width: 5px;
+  }
 }
 </style>
