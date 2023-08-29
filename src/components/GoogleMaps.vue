@@ -82,6 +82,10 @@ button{
   animation: shine 3s ease-in-out infinite;
   font-size:large;
 }
+button:hover{
+  background-color: black;
+  color: white;
+}
 @keyframes shine{
   0%,
   100%{
