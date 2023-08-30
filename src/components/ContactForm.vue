@@ -22,9 +22,9 @@
                 <label>Heure du rendez-vous</label>
                 <input class="custom-input" type="time" v-model="meet_time">
             </div>
-            <div>
-                <!-- <button class="btn">Envoyer</button> -->
-                <button></button>
+            <div class="form-element">
+                <button class="btn">Envoyer</button>
+                <!-- <button>Envoyer</button> -->
             </div>
         </form>
     </div>
@@ -54,13 +54,13 @@
     align-items: center;
 }
 .form-element{
-    /* display: flexbox; */
-    /* flex-direction: column; */
-    /* gap: 1vw; */
-    /* float:; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    margin-left: -50%
 }
 .custom-input{
     color:blue;

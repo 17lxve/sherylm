@@ -23,5 +23,20 @@ export default {
 </script>
 
 <template>
-    <img :src="background_image" alt="Contact Cover">
+  <div class="boku">
+    <img :src="'/general/' + background_image" alt="Contact Cover">
+  </div>
 </template>
+
+<style>
+img {
+  width : 70%;
+  aspect-ratio: 3/1;
+}
+.boku{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
