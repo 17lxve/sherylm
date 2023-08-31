@@ -81,12 +81,13 @@
     font-family: Outfit;
 }
 .btn{
-    background-color: burlywood;
+    /* background-color: burlywood; */
+    background-color: brown;
     font-family: Inika;
     font-size: large;
     font-weight: 600;
     font-style: oblique;
-    text-shadow: -5px -3px whitesmoke;
+    /* text-shadow: -5px -3px whitesmoke; */
     color: black;
 }
 </style>

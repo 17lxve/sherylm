@@ -30,8 +30,10 @@ export default {
 
 <style>
 img {
-  width : 70%;
+  width : 80%;
   aspect-ratio: 3/1;
+  object-fit: cover;
+  object-position: 50% 35%;
 }
 .boku{
   width: 100%;
