@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "serve" : "vite --host --open",
-    "dist" : "git add dist -f && git commit -m 'auto-update' && git subtree push --prefix dist origin gh-pages"
+    "dist" : "vite build && git add dist -f && git commit -m 'auto-update' && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "vue": "^3.3.4",

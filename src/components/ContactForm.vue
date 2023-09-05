@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <h2>{{ name_err }}</h2>
         <h2>Formulaire de prise de rendez-vous</h2>
         <form>
             <div class="form-element">
