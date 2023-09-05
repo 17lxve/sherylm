@@ -23,8 +23,9 @@
                 <label>Heure du rendez-vous</label>
                 <input class="custom-input" type="time" v-model="meet_time">
             </div>
-            <div>
+            <div class="form-element">
                 <button class="btn">Envoyer</button>
+                <!-- <button>Envoyer</button> -->
             </div>
         </form>
     </div>
@@ -70,31 +71,35 @@ form{
     flex-grow: 0;
 }
 .form-element{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-}
-.custom-input{
+    /* margin-left: -20% */
+}.custom-input{
     width: 100%;
     padding: 1%;
     margin-bottom: 1%;
     text-align: center;
     border: lightgray 1px solid;
     border-radius: 1rem;
-}
-.form-element label{
+}.form-element label{
     display: block;
     text-align: center;
-}
-.container h2{
+}.container h2{
     text-decoration:red underline;
     font-family: Outfit;
-}
-.btn{
-    background-color: burlywood;
+}.btn{
+    /* background-color: burlywood; */
+    background-color: brown;
     font-family: Inika;
     font-size: large;
     font-weight: 600;
     font-style: oblique;
     text-shadow: 1px 1px brown;
+    /* text-shadow: -5px -3px whitesmoke; */
     color: black;
 }
 </style>
