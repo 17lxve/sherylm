@@ -34,6 +34,7 @@ export default {
     </div>
     <button @click="$router.push('/product')">Voir nos collections</button>
   </div>
+  <hr>
 </template>
 
 <style scoped>
@@ -41,6 +42,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto 10%;
 }
 .vitrine {
   display: flex;
@@ -50,7 +52,7 @@ export default {
 button {
   margin: 2% 0;
   width: min-content;
-  padding: 2% 5%;
+  padding: 2% 8%;
   background-color: white;
   color: black;
   font-family: Outfit;
@@ -66,6 +68,7 @@ button:hover {
   border-radius: 25px;
   transition: all 1s;
   cursor: pointer;
+  padding: 3% 10%;
 }
 button:active {
   background-color: black;

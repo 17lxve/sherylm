@@ -16,7 +16,11 @@ export default {
   },
   computed: {
     background_image_style() {
-      return `background-image: url("/general/${this.background_image}");`
+      // return `background-image: url("/general/${this.background_image}");`
+      return `background-image: linear-gradient(
+              rgba(0, 0, 0, 0.2), 
+              rgba(0, 0, 0, 0.2)
+              ),url("/general/${this.background_image}");`
     }
   }
 }
@@ -54,7 +58,7 @@ export default {
     border-radius: 20px;
   }
 }
-.bg-div {
+.bg-div2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,17 +66,28 @@ export default {
   aspect-ratio: 10/3;
   margin-bottom: 1%;
 }
+.bg-div{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 5;
+  /* flex-wrap: nowrap; */
+  aspect-ratio: 48/10;
+}
 .bg-div h1,
 .bg-div h3 {
-  color: brown;
+  color: white;
   font-family: Outfit;
   font-weight: bold;
 }
-.bg-div h3 {
-  padding-top: 5%;
-}
+
 .text-div {
-  width: 30vw;
+  width: 50%;
+  text-align: center;
 }
 .btdiv {
   display: flex;
@@ -91,7 +106,7 @@ button {
   padding: 1%;
   margin-bottom: 2%;
   font-family: Outfit;
-  width: 50%;
+  width: 100%;
   transition: all 1s;
 }
 button:hover {

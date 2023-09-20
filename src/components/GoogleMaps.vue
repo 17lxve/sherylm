@@ -39,11 +39,10 @@ export default{
         Nous avons hâte de vous acceuillir dans notre espace privilégié, où la qualité des soins et
         l'expérience client sont notre priorité absolue.
       </p>
-      <button @click="open_maps()">Google Maps</button>
-      <button @click="open_yango()">Yango</button>
-      <!-- <YanGo></YanGo> -->
+      <!-- <button @click="open_maps()">Google Maps</button> -->
+      <!-- <button @click="open_yango()">Yango</button> -->
       <hr style="margin: 5% 0 5% 5%" />
-      <div style="width: 40%; float: right; font-family: Arial; font-size: large; font-weight: bold;">
+      <div style="width: max-content; float: right; font-family: Arial; font-size: large; font-weight: bold;">
         <ul>
           <p>Téléphone</p>
           <li><p>+225 07 11 11 56 86</p></li>
@@ -58,13 +57,13 @@ export default{
 .root {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2%;
   width: 100%;
-  padding: 0 10%;
 }
 .hanger {
   text-align: right;
-  width: 40%;
+  width: 38%;
 }
 .hanger h1 {
   font-family: Outfit;
@@ -79,8 +78,9 @@ button{
   outline: outset;
   border:none;
   padding: 1% 3%;
-  animation: shine 3s ease-in-out infinite;
+  animation: shine 6s ease-in-out infinite;
   font-size:large;
+  cursor:pointer;
 }
 button:hover{
   background-color: black;
