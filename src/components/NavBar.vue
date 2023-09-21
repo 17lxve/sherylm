@@ -29,7 +29,9 @@ a {
   font-size: calc(2vw + 0.1rem);
   height: fit-content;
 }
-
+#left_nav{
+  margin-left: 2vw ;
+}
 .navlink {
   font-family: Outfit;
   color: grey;
@@ -48,7 +50,7 @@ a {
 
 #mid_nav {
   display: flex;
-  gap: 20%;
+  gap: 10%;
   height: fit-content;
 }
 
@@ -57,6 +59,8 @@ a {
   color: brown;
   height: fit-content;
   float: right;
+  width: fit-content;
+  margin-right: 2vw;
 }
 #right_nav h3 {
   font-family: Inika;
@@ -66,7 +70,7 @@ a {
 #bar {
   display: flex;
   flex-direction: row;
-  gap: 20%;
+  gap: 15%;
   justify-content: center;
   align-items: center;
   width: 100%;

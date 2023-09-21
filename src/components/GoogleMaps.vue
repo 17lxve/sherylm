@@ -26,7 +26,7 @@ export default{
     <iframe
       id="map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.4445682214414!2d-3.999685589282948!3d5.348913835674642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb6bb631f727%3A0x3f888124a616bad0!2sSheryl%20M%20Optique!5e0!3m2!1sen!2sci!4v1687625786644!5m2!1sen!2sci"
-      width="40%"
+      width="50%"
       height="450"
       style="border: 0"
       allowfullscreen="false"
@@ -63,7 +63,7 @@ export default{
 }
 .hanger {
   text-align: right;
-  width: 38%;
+  width: 48%;
 }
 .hanger h1 {
   font-family: Outfit;

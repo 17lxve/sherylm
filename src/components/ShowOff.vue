@@ -42,7 +42,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto 10%;
+  margin: 0.1% 5%;
 }
 .vitrine {
   display: flex;
