@@ -74,7 +74,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 5;
+  /* flex: 1 0 auto; */
   /* flex-wrap: nowrap; */
   aspect-ratio: 48/10;
 }
@@ -95,6 +95,7 @@ export default {
   align-items: end;
   justify-content: center;
   height: 50%;
+  width: 100%;
 }
 button {
   text-transform: capitalize;
@@ -106,7 +107,8 @@ button {
   padding: 1%;
   margin-bottom: 2%;
   font-family: Outfit;
-  width: 100%;
+  max-width: 100%;
+  min-width: 40%;
   transition: all 1s;
 }
 button:hover {

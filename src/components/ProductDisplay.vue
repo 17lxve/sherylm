@@ -6,7 +6,7 @@
                 required: true
             },
             colors: {
-                type: [String],
+                type: Array[String],
                 required: true
             },
             picture: {
