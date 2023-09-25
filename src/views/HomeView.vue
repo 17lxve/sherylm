@@ -32,7 +32,7 @@ export default {
       là pour vous guider dans votre choix.
     </ICTA>
     <!-- <img src="/general/40.jpg" alt="Cover Picture" /> -->
-    <CoverImg :cover="'40.jpg'"/>
+    <CoverImg :cover="'40.jpg'" />
     <CTA :back="'27.jpg'" :title="'Votre partenaire pour une meilleure vision'">
       Notre expérience vous apportera bien plus qu'une simple amélioration de votre vue. Dans notre
       magasin d'optique, nous nous engageons à vous offrir des solutions visuelles qui, non

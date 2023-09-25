@@ -66,7 +66,7 @@ export default {
   aspect-ratio: 10/3;
   margin-bottom: 1%;
 }
-.bg-div{
+.bg-div {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

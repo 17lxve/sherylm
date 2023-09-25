@@ -17,11 +17,12 @@
 </template>
 
 <style scoped>
-.ps-logo{
+.ps-logo {
   font-weight: 700;
-  font-size: medium;
+  font-size: 2vw;
   height: fit-content;
   color: black;
+  align-self: center;
 }
 a {
   text-decoration: none;
@@ -29,24 +30,29 @@ a {
   font-size: calc(2vw + 0.1rem);
   height: fit-content;
 }
-#left_nav{
-  margin-left: 2vw ;
+#left_nav {
+  margin-left: 0.1vw;
+  margin-right: -3vw;
+  width: 20%;
+  aspect-ratio: 3/1;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
 }
 .navlink {
   font-family: Outfit;
   color: grey;
   height: fit-content;
 }
-.navlink:hover{
+.navlink:hover {
   color: brown;
 }
-.navlink:active{
+.navlink:active {
   color: red;
 }
-.navlink-active{
+.navlink-active {
   color: black;
 }
-
 
 #mid_nav {
   display: flex;
@@ -71,7 +77,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 15%;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: fit-content;

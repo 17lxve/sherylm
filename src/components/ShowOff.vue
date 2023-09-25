@@ -34,7 +34,7 @@ export default {
     </div>
     <button @click="$router.push('/product')">Voir nos collections</button>
   </div>
-  <hr>
+  <hr />
 </template>
 
 <style scoped>

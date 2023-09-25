@@ -30,3 +30,5 @@ coverage
 .prettierc.json
 .eslintrc.cjs
 README.md
+backend/build
+backend/node_modules

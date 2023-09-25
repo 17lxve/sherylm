@@ -24,18 +24,18 @@ export default {
 
 <template>
   <div class="boku">
-    <img :src="'/general/' + background_image" alt="Contact Cover">
+    <img :src="'/general/' + background_image" alt="Contact Cover" />
   </div>
 </template>
 
 <style>
 img {
-  width : 80%;
+  width: 80%;
   aspect-ratio: 3/1;
   object-fit: cover;
   object-position: 50% 35%;
 }
-.boku{
+.boku {
   width: 100%;
   display: flex;
   align-items: center;

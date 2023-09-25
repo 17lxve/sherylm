@@ -1,22 +1,25 @@
 <script>
 // import YanGo from './YanGo.vue'
-export default{
-  methods:{
-    open_maps(){
-      window.open('https://goo.gl/maps/Uz728hE5ZUeHopmG6', "_blank")
+export default {
+  methods: {
+    open_maps() {
+      window.open('https://goo.gl/maps/Uz728hE5ZUeHopmG6', '_blank')
     },
-    open_yango(){
-      window.open('https://3.redirect.appmetrica.yandex.com/route?' +
-'start-lat=5.402296881669657' +
-'&start-lon=-3.976345316777942' +
-'&end-lat=5.348922371094867' +
-'&end-lon=-3.9971046030935775' +
-'&level=<business>' +
-'&ref=yoursiteru' +
-'&appmetrica_tracking_id=1178268795219780156' +
-'&lang=fr")')
+    open_yango() {
+      window.open(
+        'https://3.redirect.appmetrica.yandex.com/route?' +
+          'start-lat=5.402296881669657' +
+          '&start-lon=-3.976345316777942' +
+          '&end-lat=5.348922371094867' +
+          '&end-lon=-3.9971046030935775' +
+          '&level=<business>' +
+          '&ref=yoursiteru' +
+          '&appmetrica_tracking_id=1178268795219780156' +
+          '&lang=fr")'
+      )
     }
-  }, components: {
+  },
+  components: {
     // YanGo
   }
 }
@@ -42,7 +45,15 @@ export default{
       <!-- <button @click="open_maps()">Google Maps</button> -->
       <!-- <button @click="open_yango()">Yango</button> -->
       <hr style="margin: 5% 0 5% 5%" />
-      <div style="width: max-content; float: right; font-family: Arial; font-size: large; font-weight: bold;">
+      <div
+        style="
+          width: max-content;
+          float: right;
+          font-family: Arial;
+          font-size: large;
+          font-weight: bold;
+        "
+      >
         <ul>
           <p>Téléphone</p>
           <li><p>+225 07 11 11 56 86</p></li>
@@ -68,51 +79,51 @@ export default{
 .hanger h1 {
   font-family: Outfit;
 }
-li{
+li {
   list-style-type: none;
 }
-button{
+button {
   width: 25%;
   margin: 4%;
   background-color: transparent;
   outline: outset;
-  border:none;
+  border: none;
   padding: 1% 3%;
   animation: shine 6s ease-in-out infinite;
-  font-size:large;
-  cursor:pointer;
+  font-size: large;
+  cursor: pointer;
 }
-button:hover{
+button:hover {
   background-color: black;
   color: white;
 }
-@keyframes shine{
+@keyframes shine {
   0%,
-  100%{
+  100% {
     outline-color: red;
     font-family: Outfit;
     border-radius: 2rem;
     outline-width: 10px;
   }
-  14%{
+  14% {
     outline-color: orange;
   }
-  28.5%{
+  28.5% {
     outline-color: yellow;
     outline-width: 5px;
   }
-  42.85%{
+  42.85% {
     outline-color: green;
     font-family: Inika;
   }
-  57.14%{
+  57.14% {
     outline-color: blue;
     outline-width: 10px;
   }
-  71.42%{
+  71.42% {
     outline-color: indigo;
   }
-  85.7%{
+  85.7% {
     outline-color: purple;
     outline-width: 5px;
   }

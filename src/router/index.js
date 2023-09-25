@@ -11,7 +11,8 @@ const router = createRouter({
         setTimeout(() => resolve({ top: 0 }), 1100)
       })
     )
-  },linkActiveClass:'navlink-active'
+  },
+  linkActiveClass: 'navlink-active'
 })
 
 export default router
