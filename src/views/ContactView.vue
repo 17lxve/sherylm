@@ -11,7 +11,7 @@ export default {
 </script>
 <template>
   <div>
-    <ContactHero :company_name="'Timmy \'s Devlog'" :slogan="'Gay'" :background_image="'27.jpg'" />
+    <ContactHero :background_image="'27.jpg'" />
     <ContactForm />
   </div>
 </template>

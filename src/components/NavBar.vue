@@ -7,11 +7,11 @@
     <div id="mid_nav">
       <RouterLink to="/" class="navlink">Acceuil</RouterLink>
       <RouterLink to="/product" class="navlink">Lunettes</RouterLink>
-      <RouterLink to="/contact" class="navlink">Contact</RouterLink>
+      <!-- <RouterLink to="/contact" class="navlink">Contact</RouterLink> -->
     </div>
 
     <div id="right_nav">
-      <h3>Tel:0505201515</h3>
+      <h3>Tel: 07 11 11 56 86</h3>
     </div>
   </div>
 </template>
