@@ -13,7 +13,9 @@ export default {
     }
   },
   async mounted() {
-    const response = await axios.get(this.localUrl + this.num.toString())
+    const response = await axios.get(this.localUrl + this.num.toString()).catch((err) => {
+      console.log(err)
+    })
     this.glasses = response.data
   },
   components: {
@@ -27,7 +29,7 @@ export default {
       } else if (w < 1.6) { //tablet
         return 12
       }
-      else return 8
+      else return 8 //desktop
     },
     n_active() {
       return this.nextExists ? 'active' : 'nope'

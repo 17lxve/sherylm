@@ -7,7 +7,7 @@
     <div id="mid_nav">
       <RouterLink to="/" class="navlink">Acceuil</RouterLink>
       <RouterLink to="/product" class="navlink">Lunettes</RouterLink>
-      <!-- <RouterLink to="/contact" class="navlink">Contact</RouterLink> -->
+      <RouterLink to="/contact" class="navlink">Contact</RouterLink>
     </div>
 
     <div id="right_nav">
@@ -58,6 +58,8 @@ a {
   display: flex;
   gap: 10%;
   height: fit-content;
+  justify-content: center;
+  width: 40%;
 }
 
 #right_nav {
@@ -67,6 +69,7 @@ a {
   float: right;
   width: fit-content;
   margin-right: 2vw;
+  width: 10%;
 }
 #right_nav h3 {
   font-family: Inika;
