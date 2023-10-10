@@ -33,7 +33,7 @@ export default {
     </ICTA>
     <!-- <img src="/general/40.jpg" alt="Cover Picture" /> -->
     <CoverImg :cover="'40.jpg'" />
-    <CTA :back="'9.jpg'" :title="'Votre partenaire pour une meilleure vision'">
+    <CTA :back="'white6.jfif'" :title="'Votre partenaire pour une meilleure vision'">
       Notre expérience vous apportera bien plus qu'une simple amélioration de votre vue. Dans notre
       magasin d'optique, nous nous engageons à vous offrir des solutions visuelles qui, non
       seulement rehausseront votre acuité visuelle, mais rehausseront également votre charisme.
