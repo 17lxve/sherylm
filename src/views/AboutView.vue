@@ -104,12 +104,18 @@ export default {
       />
     </div>
     <footer>
-      <div class="page">
+      <!-- <div class="page">
         <div @click="dynamic = !dynamic" class="sw material-icons" :class="p_active">
           arrow_back_ios_new
         </div>
         <div class="sw material-icons" :class="n_active">arrow_forward_ios_new</div>
+      </div> -->
+      <div class="page">
+        <div class="sw material-icons active">
+        refresh
       </div>
+      </div>
+      
     </footer>
   </main>
 </template>
@@ -129,6 +135,10 @@ export default {
   flex-direction: row;
   gap: 20%;
   width: 10%;
+}
+.sw.active{
+  cursor: pointer;
+  color: brown;
 }
 .page .sw.active {
   cursor: pointer;
