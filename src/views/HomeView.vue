@@ -17,7 +17,7 @@ export default {
       :slogan="'Votre référence pour les lunettes à Abidjan'"
       :background_image="'cropped22.jpg'"
     />
-    <CTA :back="'38.jpg'" :title="'Un examen de vue précis'">
+    <CTA :back="'38.jpg'" :title="'Un contrôle de vue précis'">
       Grâce à cette évaluation complète, nous pourrons vous offrir des verres correcteurs
       parfaitement adaptés à vos besoins uniques. Investir dans un examen oculaire de qualité est la
       première étape pour garantir une vision claire et comfortable, vous permettant ainsi de
@@ -33,7 +33,7 @@ export default {
     </ICTA>
     <!-- <img src="/general/40.jpg" alt="Cover Picture" /> -->
     <CoverImg :cover="'40.jpg'" />
-    <CTA :back="'27.jpg'" :title="'Votre partenaire pour une meilleure vision'">
+    <CTA :back="'white6.jfif'" :title="'Votre partenaire pour une meilleure vision'">
       Notre expérience vous apportera bien plus qu'une simple amélioration de votre vue. Dans notre
       magasin d'optique, nous nous engageons à vous offrir des solutions visuelles qui, non
       seulement rehausseront votre acuité visuelle, mais rehausseront également votre charisme.

@@ -4,8 +4,10 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      baseUrl :'https://17lxve.github.io:3000/',
-      localUrl : 'http://127.0.0.1:3000/',
+      urls:{
+      baseUrl: 'https://express-server-production-66ab.up.railway.app/',
+      localUrl: 'http://127.0.0.1:3000/',
+      },
       prevExists: false,
       nextExists: false,
       glasses: [],
@@ -13,7 +15,9 @@ export default {
     }
   },
   async mounted() {
-    const response = await axios.get(this.localUrl + this.num.toString())
+    const response = await axios.get(this.urls.baseUrl + this.num.toString()).catch((err) => {
+      console.log(err)
+    })
     this.glasses = response.data
   },
   components: {
@@ -21,13 +25,14 @@ export default {
   },
   computed: {
     num() {
-      let w = window.innerWidth/window.innerHeight
-      if (w < 1) { //phone
+      let w = window.innerWidth / window.innerHeight
+      if (w < 1) {
+        //phone
         return 16
-      } else if (w < 1.6) { //tablet
+      } else if (w < 1.6) {
+        //tablet
         return 12
-      }
-      else return 8
+      } else return 8 //desktop
     },
     n_active() {
       return this.nextExists ? 'active' : 'nope'
