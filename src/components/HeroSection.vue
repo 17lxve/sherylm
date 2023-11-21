@@ -74,8 +74,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* flex: 1 0 auto; */
-  /* flex-wrap: nowrap; */
   aspect-ratio: 48/10;
 }
 .bg-div h1,
@@ -86,8 +84,8 @@ export default {
 }
 
 .text-div {
-  width: 50%;
-  text-align: center;
+  width: 90%;
+  text-align: left;
 }
 .btdiv {
   display: flex;

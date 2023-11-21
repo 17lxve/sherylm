@@ -11,7 +11,7 @@
     </div>
 
     <div id="right_nav">
-      <h3>Tel: 07 11 11 56 86</h3>
+      <h3>Tel: 05 65 74 82 52</h3>
     </div>
   </div>
 </template>
@@ -66,6 +66,7 @@ a {
   text-decoration: underline solid brown;
   color: brown;
   height: fit-content;
+  flex-wrap: wrap;
   float: right;
   width: fit-content;
   margin-right: 2vw;
@@ -74,6 +75,7 @@ a {
 #right_nav h3 {
   font-family: Inika;
   height: fit-content;
+  font-size: 90%;
 }
 
 #bar {

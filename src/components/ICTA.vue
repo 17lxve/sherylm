@@ -50,7 +50,8 @@ export default {
 .pic {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0px -100px;
+  /* border: 2px solid black; */
 }
 .full-box {
   display: flex;

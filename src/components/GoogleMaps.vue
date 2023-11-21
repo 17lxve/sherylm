@@ -39,8 +39,7 @@ export default {
     <div class="hanger">
       <h1>Retrouvez Sheryl M. Optique à la Cité des Arts</h1>
       <p>
-        Nous avons hâte de vous acceuillir dans notre espace privilégié, où la qualité des soins et
-        l'expérience client sont notre priorité absolue.
+        Nous avons hâte de vous acceuillir dans notre espace privilégié, où nous apportons de la douceur à vos yeux.
       </p>
       <!-- <button @click="open_maps()">Google Maps</button> -->
       <!-- <button @click="open_yango()">Yango</button> -->
@@ -57,7 +56,7 @@ export default {
         <ul>
           <p>Téléphone</p>
           <li><p>+225 07 11 11 56 86</p></li>
-          <li><p>+225 01 01 99 37 33</p></li>
+          <li><p>+225 05 65 74 82 52</p></li>
         </ul>
       </div>
     </div>
