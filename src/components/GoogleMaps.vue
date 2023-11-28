@@ -39,7 +39,8 @@ export default {
     <div class="hanger">
       <h1>Retrouvez Sheryl M. Optique à la Cité des Arts</h1>
       <p>
-        Nous avons hâte de vous acceuillir dans notre espace privilégié, où nous apportons de la douceur à vos yeux.
+        Nous avons hâte de vous acceuillir dans notre espace privilégié, où nous apportons de la
+        douceur à vos yeux.
       </p>
       <!-- <button @click="open_maps()">Google Maps</button> -->
       <!-- <button @click="open_yango()">Yango</button> -->

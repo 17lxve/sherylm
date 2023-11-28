@@ -5,7 +5,7 @@ import NavBar from './components/NavBar.vue'
 import LoadingShow from './views/LoadingShow.vue'
 export default {
   components: { NavBar, LoadingShow },
-  setup(){
+  setup() {
     const loader = useAll()
     const fil = ref('all')
     console.log(loader.isLoading)

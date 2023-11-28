@@ -7,12 +7,12 @@ import ICTA from '../components/ICTA.vue'
 import CTA from '../components/CTA.vue'
 export default {
   components: { HeroSection, ShowOff, CoverImg, GoogleMaps, CTA, ICTA },
-  data(){
-    return{
-      slogan1 : 'Voir, avec style',
+  data() {
+    return {
+      slogan1: 'Voir, avec style',
       slogan2: 'Votre référence pour les lunettes à Abidjan',
       title1: 'Votre partenaire pour une meilleure vision',
-      title2: 'Des lunettes de caractère pour quelqu\'un de charismatique',
+      title2: "Des lunettes de caractère pour quelqu'un de charismatique",
       text1: 'Quand la lumière change, nos verres changent votre vie',
       text2: 'Nous apportons de la douceur à vos yeux'
     }
@@ -29,8 +29,8 @@ export default {
     />
     <CTA :back="'38.jpg'" :title="'Un contrôle de vue précis'">
       Grâce à cette évaluation complète, nous pourrons vous offrir des verres correcteurs
-      parfaitement adaptés à vos besoins uniques. Investir dans un contrôle oculaire de qualité est la
-      première étape pour garantir une vision claire et comfortable, vous permettant ainsi de
+      parfaitement adaptés à vos besoins uniques. Investir dans un contrôle oculaire de qualité est
+      la première étape pour garantir une vision claire et comfortable, vous permettant ainsi de
       profiter pleinement du monde qui vous entoure.
     </CTA>
     <ShowOff :a="'1.webp'" :b="'2.webp'" :c="'3.webp'" :d="'4.webp'" />

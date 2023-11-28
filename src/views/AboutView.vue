@@ -11,14 +11,14 @@ export default {
       dynamic: true
     }
   },
-  setup(){
-      const genStore = useAll()
-      genStore.getGlasses()
-      const fil = ref('all')
-      return { genStore, fil }
-    },
-  methods:{
-    async getGlasses(){
+  setup() {
+    const genStore = useAll()
+    genStore.getGlasses()
+    const fil = ref('all')
+    return { genStore, fil }
+  },
+  methods: {
+    async getGlasses() {
       const genStore = useAll()
       genStore.getGlasses()
       const fil = ref('all')
@@ -110,11 +110,8 @@ export default {
     </div>
     <footer>
       <div class="page">
-        <div @click="getGlasses()" class="sw material-icons active">
-        refresh
+        <div @click="getGlasses()" class="sw material-icons active">refresh</div>
       </div>
-      </div>
-      
     </footer>
   </main>
 </template>
@@ -134,7 +131,7 @@ export default {
   gap: 20%;
   width: 10%;
 }
-.sw.active{
+.sw.active {
   cursor: pointer;
   color: brown;
 }
