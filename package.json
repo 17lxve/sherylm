@@ -9,11 +9,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "serve": "vite --host --open",
+    "deploy": "vite build && git add * && git commit -m 'loading' && git push -u origin main && firebase --deploy --only hosting",
     "dist": "vite build && git add dist -f && git commit -m 'auto-update' && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "axios": "^1.5.0",
     "concurrently": "^8.2.1",
+    "pinia": "^2.1.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },

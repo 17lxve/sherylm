@@ -1,24 +1,29 @@
 <script>
 import ProductDisplay from '../components/ProductDisplay.vue'
-import axios from 'axios'
+import { useAll } from '../stores/GeneralStore'
+import { ref } from 'vue'
 export default {
   data() {
     return {
-      urls:{
-      baseUrl: 'https://express-server-production-66ab.up.railway.app/',
-      localUrl: 'http://127.0.0.1:3000/',
-      },
       prevExists: false,
       nextExists: false,
       glasses: [],
       dynamic: true
     }
   },
-  async mounted() {
-    const response = await axios.get(this.urls.baseUrl + this.num.toString()).catch((err) => {
-      console.log(err)
-    })
-    this.glasses = response.data
+  setup(){
+      const genStore = useAll()
+      genStore.getGlasses()
+      const fil = ref('all')
+      return { genStore, fil }
+    },
+  methods:{
+    async getGlasses(){
+      const genStore = useAll()
+      genStore.getGlasses()
+      const fil = ref('all')
+      return { genStore, fil }
+    }
   },
   components: {
     ProductDisplay
@@ -96,7 +101,7 @@ export default {
     </div>
     <div class="showroom" v-if="dynamic">
       <ProductDisplay
-        v-for="glass in glasses"
+        v-for="glass in genStore.glasses"
         :key="glass._id"
         :name="glass.name"
         :colors="glass.colors"
@@ -104,14 +109,8 @@ export default {
       />
     </div>
     <footer>
-      <!-- <div class="page">
-        <div @click="dynamic = !dynamic" class="sw material-icons" :class="p_active">
-          arrow_back_ios_new
-        </div>
-        <div class="sw material-icons" :class="n_active">arrow_forward_ios_new</div>
-      </div> -->
       <div class="page">
-        <div class="sw material-icons active">
+        <div @click="getGlasses()" class="sw material-icons active">
         refresh
       </div>
       </div>
@@ -129,7 +128,6 @@ export default {
 }
 .page {
   margin-left: 45%;
-  /* position: absolute; */
   bottom: 5%;
   display: flex;
   flex-direction: row;
