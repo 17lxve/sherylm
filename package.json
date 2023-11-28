@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "serve": "vite --host --open",
-    "deploy": "vite build && git add * && git commit -m 'formatting' && git push -u origin main && firebase deploy --only hosting",
+    "deploy": "vite build && git add * && git commit -m 'fixed_animation' && git push -u origin main && firebase deploy --only hosting",
     "dist": "vite build && git add dist -f && git commit -m 'auto-update' && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
